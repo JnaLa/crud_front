@@ -1,0 +1,22 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable, map } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class DiscService {
+  private apiUrl = 'https://localhost:44345/Discs'; 
+
+  constructor(private http: HttpClient) {}
+
+
+  returnDiscs(): Observable<any> {
+    return this.http
+      .get<any>(this.apiUrl)
+  }
+
+
+
+}
+

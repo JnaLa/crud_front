@@ -1,0 +1,35 @@
+<p>discs works!</p>
+
+
+<div class="container">
+    <div class="table-container">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Plastic</th>
+                    <th>Speed</th>
+                    <th>Glide</th>
+                    <th>Turn</th>
+                    <th>Fade</th>
+
+
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let disc of discList">
+                <tr>
+                    <td>{{disc.name}}</td>
+                    <td>{{disc.type}}</td>
+                    <td>{{disc.plastic}}</td>
+                    <td>{{disc.speed}}</td>
+                    <td>{{disc.glide}}</td>
+                    <td>{{disc.turn}}</td>
+                    <td>{{disc.fade}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
