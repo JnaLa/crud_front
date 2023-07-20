@@ -1,2 +1,38 @@
-<p>add-disc works!</p>
-<button class="btn btn-danger">aasd</button>
+<div class="container">
+    <h3 class="header-3">Add disc</h3>
+    <form [formGroup]="addDiscForm" (ngSubmit)="addDisc()">
+        <div class="row justify-content-md-center">
+            <label>Enter disc name</label>
+            <input type="text" name="discName" formControlName="discName">
+        </div>
+        <div class="row justify-content-md-center">
+            <label>Enter disc type</label>
+            <input type="text" name="discType" formControlName="discType">
+        </div>
+        <div class="row justify-content-md-center">
+            <label>Enter disc plastic</label>
+            <input type="text" name="discPlastic" formControlName="discPlastic">
+        </div>
+        <div class="row justify-content-md-center">
+            <label>Enter disc speed</label>
+            <input type="number" name="discSpeed" formControlName="discSpeed">
+        </div>
+        <div class="row justify-content-md-center">
+            <label>Enter disc glide</label>
+            <input type="number" name="discGlide" formControlName="discGlide">
+        </div>
+        <div class="row justify-content-md-center">
+            <label>Enter disc turn</label>
+            <input type="number" name="discTurn" formControlName="discTurn">
+        </div>
+        <div class="row justify-content-md-center">
+            <label>Enter disc fade</label>
+            <input type="number" name="discFade" formControlName="discFade">
+        </div>
+
+        <div class="row justify-content-md-center">
+            <button class="btn btn-outline-success">Add disc</button>
+        </div>
+    </form>
+</div>
+

@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { AddDiscComponent } from './add-disc/add-disc.component';
 import { DiscsComponent } from './discs/discs.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'
+
 
 
 
@@ -18,7 +20,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
