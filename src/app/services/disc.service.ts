@@ -21,6 +21,11 @@ export class DiscService {
     return this.http.post<any>(this.apiUrl, discData)
   }
 
+  deleteDisc(discId: number): Observable<any> {
+    console.log(discId)
+    return this.http.delete<any>(this.apiUrl +'/'+ + discId)
+  }
+
 
 
 }

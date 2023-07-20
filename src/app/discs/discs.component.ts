@@ -21,8 +21,12 @@ export class DiscsComponent {
       console.log(r)
       this.discList = r
     })
+  }
 
-
+  deleteDisc(discId: number) {
+    this.discService.deleteDisc(discId).subscribe(r => {
+      this.ngOnInit()
+    })
   }
 
 
