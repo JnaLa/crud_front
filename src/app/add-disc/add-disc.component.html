@@ -3,35 +3,35 @@
     <form [formGroup]="addDiscForm" (ngSubmit)="addDisc()">
         <div class="row justify-content-md-center">
             <label>Enter disc name</label>
-            <input type="text" name="discName" formControlName="discName">
+            <input type="text" name="name" formControlName="name">
         </div>
         <div class="row justify-content-md-center">
             <label>Enter disc type</label>
-            <input type="text" name="discType" formControlName="discType">
+            <input type="text" name="type" formControlName="type">
         </div>
         <div class="row justify-content-md-center">
             <label>Enter disc plastic</label>
-            <input type="text" name="discPlastic" formControlName="discPlastic">
+            <input type="text" name="plastic" formControlName="plastic">
         </div>
         <div class="row justify-content-md-center">
             <label>Enter disc speed</label>
-            <input type="number" name="discSpeed" formControlName="discSpeed">
+            <input type="number" name="speed" formControlName="speed">
         </div>
         <div class="row justify-content-md-center">
             <label>Enter disc glide</label>
-            <input type="number" name="discGlide" formControlName="discGlide">
+            <input type="number" name="glide" formControlName="glide">
         </div>
         <div class="row justify-content-md-center">
             <label>Enter disc turn</label>
-            <input type="number" name="discTurn" formControlName="discTurn">
+            <input type="number" name="turn" formControlName="turn">
         </div>
         <div class="row justify-content-md-center">
             <label>Enter disc fade</label>
-            <input type="number" name="discFade" formControlName="discFade">
+            <input type="number" name="fade" formControlName="fade">
         </div>
 
         <div class="row justify-content-md-center">
-            <button class="btn btn-outline-success">Add disc</button>
+            <button class="btn btn-outline-success" type="submit">Add disc</button>
         </div>
     </form>
 </div>

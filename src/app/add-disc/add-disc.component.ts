@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { DiscService } from '../services/disc.service';
 
 @Component({
   selector: 'app-add-disc',
@@ -8,19 +9,28 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class AddDiscComponent {
 
+  constructor(
+    private discService: DiscService
+  ) {}
+
   addDiscForm = new FormGroup(
     {
-      discName: new FormControl(),
-      discType: new FormControl(),
-      discPlastic: new FormControl(),
-      discSpeed: new FormControl(),
-      discGlide: new FormControl(),
-      discTurn: new FormControl(),
-      discFade: new FormControl()
+      name: new FormControl(),
+      type: new FormControl(),
+      plastic: new FormControl(),
+      speed: new FormControl(),
+      glide: new FormControl(),
+      turn: new FormControl(),
+      fade: new FormControl()
     }
   )
 
   addDisc() {
+    let discData = this.addDiscForm.getRawValue();
+
+    this.discService.addDisc(discData).subscribe(r => {
+      console.log(r)
+    })
     
   }
 

@@ -16,6 +16,11 @@ export class DiscService {
       .get<any>(this.apiUrl)
   }
 
+  addDisc(discData: any): Observable<any> {
+    console.log(discData)
+    return this.http.post<any>(this.apiUrl, discData)
+  }
+
 
 
 }
