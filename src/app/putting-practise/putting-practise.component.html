@@ -1,0 +1,94 @@
+<div class="d-flex justify-content-center">
+  <mat-card>
+    <div class="container">
+      <h1>Circle 1</h1>
+      <mat-card-content>
+        <div class="label-container">
+          <h5>C1 Short</h5>
+          <label>3.3m</label>
+        </div>
+        <div class="label-container">
+          <label>Value</label>
+          <label class="example-value-label"> {{ sliderC1Short.value }}</label>
+        </div>
+        <mat-slider [min]="min" [max]="max" [step]="step" [showTickMarks]="showTicks">
+          <input matSliderThumb [(ngModel)]="c1Short" #sliderC1Short />
+        </mat-slider>
+      </mat-card-content>
+    </div>
+    <mat-card-content>
+      <div class="label-container">
+        <h5>C1 Medium</h5>
+        <label>6.7m</label>
+      </div>
+      <div class="label-container">
+        <label>Value</label>
+        <label class="example-value-label"> {{ sliderc1Medium.value }}</label>
+      </div>
+      <mat-slider [min]="min" [max]="max" [step]="step" [showTickMarks]="showTicks">
+        <input matSliderThumb [(ngModel)]="c1Medium" #sliderc1Medium />
+      </mat-slider>
+    </mat-card-content>
+    <mat-card-content>
+      <div class="label-container">
+        <h5>C1 Long</h5>
+        <label>10m</label>
+      </div>
+      <div class="label-container">
+        <label>Value</label>
+        <label class="example-value-label"> {{ sliderC1Long.value }}</label>
+      </div>
+      <mat-slider [min]="min" [max]="max" [step]="step" [showTickMarks]="showTicks">
+        <input matSliderThumb [(ngModel)]="c1Long" #sliderC1Long />
+      </mat-slider>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <div class="container">
+      <h1>Circle 2</h1>
+      <mat-card-content>
+        <div class="label-container">
+          <h5>C2 Short</h5>
+          <label>13.3m</label>
+        </div>
+        <div class="label-container">
+          <label>Value</label>
+          <label class="example-value-label"> {{ sliderC2Short.value }}</label>
+        </div>
+        <mat-slider [min]="min" [max]="max" [step]="step" [showTickMarks]="showTicks">
+          <input matSliderThumb [(ngModel)]="c2Short" #sliderC2Short />
+        </mat-slider>
+      </mat-card-content>
+    </div>
+    <mat-card-content>
+      <div class="label-container">
+        <h5>C2 Medium</h5>
+        <label>16.7m</label>
+      </div>
+      <div class="label-container">
+        <label>Value</label>
+        <label class="example-value-label"> {{ sliderc2Medium.value }}</label>
+      </div>
+      <mat-slider [min]="min" [max]="max" [step]="step" [showTickMarks]="showTicks">
+        <input matSliderThumb [(ngModel)]="c2Medium" #sliderc2Medium />
+      </mat-slider>
+    </mat-card-content>
+    <mat-card-content>
+      <div class="label-container">
+        <h5>C2 Long</h5>
+        <label>20m</label>
+      </div>
+      <div class="label-container">
+        <label>Value</label>
+        <label class="example-value-label"> {{ sliderC2Long.value }}</label>
+      </div>
+      <mat-slider [min]="min" [max]="max" [step]="step" [showTickMarks]="showTicks">
+        <input matSliderThumb [(ngModel)]="c2Long" #sliderC2Long />
+      </mat-slider>
+    </mat-card-content>
+  </mat-card>
+  <div>
+    <button class="btn btn-success" (click)="addPuttingPractise()">Finish</button>
+  </div>
+</div>
