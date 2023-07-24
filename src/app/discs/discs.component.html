@@ -10,8 +10,7 @@
                     <th>Glide</th>
                     <th>Turn</th>
                     <th>Fade</th>
-
-
+                    <th>In bag?</th>
 
                     <th></th>
                 </tr>
@@ -25,7 +24,13 @@
                     <td>{{disc.glide}}</td>
                     <td>{{disc.turn}}</td>
                     <td>{{disc.fade}}</td>
-                    <td><button class="btn btn-outline-danger" (click)="deleteDisc(disc.id)">Remove disc</button></td>
+                    <td *ngIf="disc.isInBag == false">
+                        <fa-icon class="icon" [icon]="faCheck" (click)="addDiscInBag(disc)" size="2x"></fa-icon>
+                    </td>
+                    <td *ngIf="disc.isInBag == true">
+                        <fa-icon class="icon" [icon]="faCross" (click)="removeDiscFromBag(disc)" size="2x"></fa-icon>
+                    </td>
+                    <td><fa-icon class="icon" [icon]="faTrashCan" size="2x" (click)="deleteDisc(disc.id)"></fa-icon></td>
                 </tr>
             </tbody>
         </table>

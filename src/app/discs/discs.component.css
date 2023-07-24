@@ -1,0 +1,7 @@
+.ng-fa-icon.icon {
+    color: darkslategray;
+  }
+
+.ng-fa-icon.icon:hover {
+    color: pink;
+  }

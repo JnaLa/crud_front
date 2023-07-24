@@ -6,6 +6,9 @@ import { AddDiscComponent } from './add-disc/add-disc.component';
 import { DiscsComponent } from './discs/discs.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms'
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+
+
 
 
 
@@ -21,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

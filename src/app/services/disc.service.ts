@@ -23,8 +23,15 @@ export class DiscService {
 
   deleteDisc(discId: number): Observable<any> {
     console.log(discId)
-    return this.http.delete<any>(this.apiUrl +'/'+ + discId)
+    return this.http.delete<any>(this.apiUrl +'/'+ discId)
   }
+
+  toggleDiscInBag(discData: any): Observable<any> {
+    console.log(discData)
+    return this.http.put<any>(this.apiUrl, discData)
+  }
+
+
 
 
 
