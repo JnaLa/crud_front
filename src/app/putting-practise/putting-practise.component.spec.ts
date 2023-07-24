@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PuttingPractiseComponent } from './putting-practise.component';
 
 describe('PuttingPractiseComponent', () => {
