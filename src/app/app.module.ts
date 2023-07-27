@@ -7,6 +7,8 @@ import { DiscsComponent } from './discs/discs.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms'
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { HomeComponent } from './home/home.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
 
 
 
@@ -19,6 +21,8 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
     AppComponent,
     AddDiscComponent,
     DiscsComponent,
+    HomeComponent,
+    NavMenuComponent,
     //PuttingPractiseComponent,
   ],
   imports: [
