@@ -18,6 +18,7 @@ export class AddDiscComponent {
       name: new FormControl(),
       type: new FormControl(),
       plastic: new FormControl(),
+      color: new FormControl(),
       speed: new FormControl(),
       glide: new FormControl(),
       turn: new FormControl(),

@@ -2,37 +2,54 @@
     <h3 class="header-3">Add disc</h3>
     <form [formGroup]="addDiscForm" (ngSubmit)="addDisc()">
         <div class="row justify-content-md-center">
-            <label>Enter disc name</label>
-            <input type="text" name="name" formControlName="name">
+            <mat-form-field class="col" appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name" type="text" name="name" formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field class="col" appearance="outline">
+                <mat-label>Type</mat-label>
+                <input matInput placeholder="Type" type="text" name="type" formControlName="type">
+            </mat-form-field>
         </div>
+
         <div class="row justify-content-md-center">
-            <label>Enter disc type</label>
-            <input type="text" name="type" formControlName="type">
+            <mat-form-field class="col" appearance="outline">
+                <mat-label>Plastic</mat-label>
+                <input matInput placeholder="Plastic" type="text" name="plastic" formControlName="plastic">
+            </mat-form-field>
+
+            <mat-form-field class="col" appearance="outline">
+                <mat-label>Color</mat-label>
+                <input matInput placeholder="Color" type="text" name="color" formControlName="color">
+            </mat-form-field>
         </div>
+
         <div class="row justify-content-md-center">
-            <label>Enter disc plastic</label>
-            <input type="text" name="plastic" formControlName="plastic">
-        </div>
-        <div class="row justify-content-md-center">
-            <label>Enter disc speed</label>
-            <input type="number" name="speed" formControlName="speed">
-        </div>
-        <div class="row justify-content-md-center">
-            <label>Enter disc glide</label>
-            <input type="number" name="glide" formControlName="glide">
-        </div>
-        <div class="row justify-content-md-center">
-            <label>Enter disc turn</label>
-            <input type="number" name="turn" formControlName="turn">
-        </div>
-        <div class="row justify-content-md-center">
-            <label>Enter disc fade</label>
-            <input type="number" name="fade" formControlName="fade">
+            <mat-form-field class="col" appearance="outline">
+                <mat-label>Speed</mat-label>
+                <input matInput placeholder="Speed" type="number" name="speed" formControlName="speed">
+            </mat-form-field>
+
+            <mat-form-field class="col" appearance="outline">
+                <mat-label>Glide</mat-label>
+                <input matInput placeholder="Glide" type="number" name="glide" formControlName="glide">
+            </mat-form-field>
+
+            <mat-form-field class="col" appearance="outline">
+                <mat-label>Turn</mat-label>
+                <input matInput placeholder="Turn" type="number" name="turn" formControlName="turn">
+            </mat-form-field>
+
+            <mat-form-field class="col" appearance="outline">
+                <mat-label>Fade</mat-label>
+                <input matInput placeholder="Fade" type="number" name="fade" formControlName="fade">
+            </mat-form-field>
         </div>
 
         <div class="row justify-content-md-center">
             <button class="btn btn-outline-success" type="submit">Add disc</button>
         </div>
+
     </form>
 </div>
-
