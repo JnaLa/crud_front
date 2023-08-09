@@ -4,8 +4,9 @@
             <thead class="thead-dark">
                 <tr>
                     <th>Name</th>
-                    <th>Type</th>
+                    <th>Manufacturer</th>
                     <th>Plastic</th>
+                    <th>Color</th>
                     <th>Speed</th>
                     <th>Glide</th>
                     <th>Turn</th>
@@ -18,8 +19,9 @@
             <tbody *ngFor="let disc of discList">
                 <tr>
                     <td>{{disc.name}}</td>
-                    <td>{{disc.type}}</td>
+                    <td>{{disc.manufacturer}}</td>
                     <td>{{disc.plastic}}</td>
+                    <td>{{disc.color}}</td>
                     <td>{{disc.speed}}</td>
                     <td>{{disc.glide}}</td>
                     <td>{{disc.turn}}</td>

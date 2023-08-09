@@ -16,7 +16,7 @@ export class AddDiscComponent {
   addDiscForm = new FormGroup(
     {
       name: new FormControl(),
-      type: new FormControl(),
+      manufacturer: new FormControl(),
       plastic: new FormControl(),
       color: new FormControl(),
       speed: new FormControl(),

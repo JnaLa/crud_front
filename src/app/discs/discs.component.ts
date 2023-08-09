@@ -39,8 +39,9 @@ export class DiscsComponent {
     let discParsedData = {
       id: discData.id,
       name: discData.name,
-      type: discData.type,
+      manufacturer: discData.manufacturer,
       plastic: discData.plastic,
+      color: discData.color,
       speed: discData.speed,
       glide: discData.glide,
       turn: discData.turn,
@@ -58,8 +59,9 @@ export class DiscsComponent {
     let discParsedData = {
       id: discData.id,
       name: discData.name,
-      type: discData.type,
+      manufacturer: discData.manufacturer,
       plastic: discData.plastic,
+      color: discData.color,
       speed: discData.speed,
       glide: discData.glide,
       turn: discData.turn,
