@@ -12,6 +12,8 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './user_auth/login/login.component';
+import { RegisterComponent } from './user_auth/register/register.component';
 
 
 
@@ -28,6 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DiscsComponent,
     HomeComponent,
     NavMenuComponent,
+    LoginComponent,
+    RegisterComponent,
     //PuttingPractiseComponent,
   ],
   imports: [
