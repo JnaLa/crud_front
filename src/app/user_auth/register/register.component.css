@@ -1,0 +1,23 @@
+::ng-deep mat-dialog-container {
+    padding: 0;
+    background: linear-gradient(140.6deg, rgb(15, 52, 67)55.5%, rgb(52, 232, 158) 91.5%)!important;
+    border-radius: 10px!important;
+}
+
+.dialog-tabs {
+    color:pink;
+}
+
+.btn {
+    color: white;
+    text-align: center;
+    width: 10%;
+}
+
+.h3 {
+    text-align: center;
+}
+
+
+
+

@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="logIn()">   
+        <div class="row justify-content-md-center">
+            <h3 class="h3">Please sign in</h3>
+            <mat-form-field class="col col-md-5" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Enter email" type="text" name="email" formControlName="email" class="form-control" required>
+            </mat-form-field>
+        </div>
+        <div class="row justify-content-md-center">
+            <mat-form-field class="col col-md-5" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Enter password" type="password" name="password" formControlName="password" class="form-control" required>
+            </mat-form-field>
+        </div>
+        <div class="row justify-content-md-center">
+            <mat-error class="col col-md-5" *ngIf="showError">Email or password are incorrect</mat-error>
+        </div> 
+       
+        <div class="row justify-content-md-center">
+            <button [disabled]="this.loginForm.controls.email.value === '' || this.loginForm.controls.password.value === ''" class="btn btn-success" type="submit">Sign in</button>
+        </div>
+    </form>
+</div>

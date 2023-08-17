@@ -17,12 +17,6 @@ import { RegisterComponent } from './user_auth/register/register.component';
 
 
 
-
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
